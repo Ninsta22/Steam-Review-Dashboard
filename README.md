@@ -10,7 +10,7 @@ The following in a comprehensive report that will explain the full Data Engineer
 
 This analytics Dashboard was created to be able to derive insights from the reviews left under certain large games in the Steam marketplace. Steam is an open-source gaming marketplace that provides the feature for users to leave positive and negative reviews under the various games. These reviews are presented as JSON files when utilizing Steam's API, which will provide the review, and other accompanying data for it.
 
-This dashboard is a Python written interactable microservice, which utilizes an ETL pipeline in Azure Databricks. The microservice is hosted in DockerHub, easily reproducible with the provided DockerImage. It presents the information as an interactable website, created using Flask. It accepts user input, and will then process various types of graphs computed with the parameters requested from the user (these parameters are used in a SQL query to derive the proper information).
+This dashboard is a Python written interactable microservice, which utilizes an ETL pipeline in Azure Databricks. The microservice is contained in DockerHub, easily reproducible with the provided DockerImage, and hosted on Azure Web App to a public endpoint. It presents the information as an interactable website, created using Flask. It accepts user input, and will then process various types of graphs computed with the parameters requested from the user (these parameters are used in a SQL query to derive the proper information).
 
 ### The Games Analyzed
 
@@ -54,7 +54,7 @@ After the user inputs a few parameters, the code will begin its interaction with
 
 ### Docker
 
-This project is currently hosted and containerized on DockerHub **ENTER THE DOCKERHUB LINK HERE ONCE ITS CREATED**. The Dockerfile in the root level of this repository is used to make the DockerImage for the entire microservice. From here, it will then connect to Azure Web Service, so that the entire dashboard can be hosted, as well as easily scaleable.
+This project is currently contained on DockerHub **ENTER THE DOCKERHUB LINK HERE ONCE ITS CREATED**. The Dockerfile, currently located in the root level of this repository, is used to make the DockerImage for the entire microservice. From here, the container is pushed to Azure Web App, so that the entire dashboard can be deployed to a public endpoint. With this public endpoint, it becomes easier for anyone to access the dashboard. The utilization of Docker and Azure Web App was paired with the thought of, once the pipeline was established, the entire dashboard becomes easily scaleable.
 
 ### GitHub Actions
 
