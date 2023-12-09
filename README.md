@@ -98,7 +98,7 @@ The other main use was to explain the interaction between any python file and th
 
 ### Architectural Diagram
 
-{PLACE THAT SHIT HERE}
+![image](https://github.com/Ninsta22/Steam-Review-Dashboard/assets/55768636/c568a469-cd79-4131-bdbb-a9810b9e7d05)
 
 ### Demo Video
 
