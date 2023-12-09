@@ -1,4 +1,4 @@
-# Steam Review Analytic Dashboard
+# Steam Review Analytics Dashboard
 
 ## A dashboard created ahering to DevOps principles, created to provide various insights based off of reviews left on gaming market place Steam, and some of its biggest games
 
